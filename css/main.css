@@ -31,7 +31,9 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: black;
+  display: none;
+  background: url('http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg');
+  background-size: cover;
   overflow: hidden;
 }
 /* line 34, ../scss/main.scss */
