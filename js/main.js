@@ -9,4 +9,4 @@ function anim() {
     setTimeout(anim, 10000);
 }
 anim();})
-$(window).resize(function(){window.location.href=window.location.href})
+//$(window).resize(function(){window.location.href=window.location.href})
