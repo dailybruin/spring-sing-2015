@@ -1,7 +1,7 @@
 var itemHeight = $('.item').width(); 
 
 
-$('.item').each(function(id){
+$('.item').each(function(){
 
 	$(this).css('height',itemHeight);
 });
@@ -21,6 +21,13 @@ $(window).load(function(){
 
 
 })
-// $(window).resize(function(){window.location.href=window.location.href})
+// $(window).resize(function(){
+// 	// window.location.href=window.location.href
+// 	console.log("resize");
+// 	$('.item').each(function(){
+
+// 		$(this).css('height',itemHeight);
+// 	});
+// })
 
 

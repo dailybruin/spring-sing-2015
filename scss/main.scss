@@ -52,22 +52,57 @@ header {
 
 
 
-.overlay:hover .description {
-	@include vendorize(opacity, 1);
-	display:block; 
+.overlay {
+	&:hover .description {
+		@include vendorize(transform, translateY(0%));
+	}
+	&:hover .type {
+		@include vendorize(transform, translateY(0%));
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	// @include vendorize(opacity, 1);
+	// top: 70%;
 }
 
 .description {
-	height: 100%;
-	width: 100%;
-	@include vendorize(opacity, 0);
+	padding: 5px;
 
-	background-color: rgba(0, 0, 0, 0.8);
-  
-  -webkit-transition: opacity 600ms ease-in-out;
-  -moz-transition: opacity 600ms ease-in-out;
-  -o-transition: opacity 600ms ease-in-out;
-  transition: opacity 600ms ease-in-out;
+	background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include vendorize(transform, translateY(100%));
+  @include vendorize(transition, transform 350ms ease-in-out);
+
+  h6 {
+  	font-family: 'Lora', serif; 
+  }
+
+}
+
+.type {
+	padding: 5px;
+	text-align: center;
+
+	background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  bottom: 90%;
+  right: 65%;
+  @include vendorize(transform, translateY(-105%));
+  @include vendorize(transition, transform 350ms ease-in-out);
+
+  h6 {
+  	font-family: 'Montserrat', sans-serif;
+  }
+
 }
 
 /*.row {

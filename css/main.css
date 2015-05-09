@@ -53,30 +53,78 @@ header {
   margin-top: 0;
 }
 
-/* line 55, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .overlay:hover .description {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  -ms-opacity: 1;
-  -o-opacity: 1;
-  opacity: 1;
-  display: block;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+/* line 59, ../scss/main.scss */
+.overlay:hover .type {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+/* line 62, ../scss/main.scss */
+.overlay:hover {
+  cursor: pointer;
 }
 
-/* line 60, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 .description {
-  height: 100%;
-  width: 100%;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  -ms-opacity: 0;
-  -o-opacity: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: opacity 600ms ease-in-out;
-  -moz-transition: opacity 600ms ease-in-out;
-  -o-transition: opacity 600ms ease-in-out;
-  transition: opacity 600ms ease-in-out;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: transform 350ms ease-in-out;
+  -moz-transition: transform 350ms ease-in-out;
+  -ms-transition: transform 350ms ease-in-out;
+  -o-transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+}
+/* line 82, ../scss/main.scss */
+.description h6 {
+  font-family: 'Lora', serif;
+}
+
+/* line 88, ../scss/main.scss */
+.type {
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  bottom: 90%;
+  right: 65%;
+  -webkit-transform: translateY(-105%);
+  -moz-transform: translateY(-105%);
+  -ms-transform: translateY(-105%);
+  -o-transform: translateY(-105%);
+  transform: translateY(-105%);
+  -webkit-transition: transform 350ms ease-in-out;
+  -moz-transition: transform 350ms ease-in-out;
+  -ms-transition: transform 350ms ease-in-out;
+  -o-transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+}
+/* line 102, ../scss/main.scss */
+.type h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*.row {
@@ -87,17 +135,17 @@ header {
   max-width: 62.5rem;
 }
 */
-/* line 84, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 #talent-profiles h1 {
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
 
-/* line 91, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .title {
   margin-top: 15%;
 }
-/* line 93, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 .title .title-main {
   -webkit-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
@@ -105,7 +153,7 @@ header {
   -o-transform: skewY(-6deg);
   transform: skewY(-6deg);
 }
-/* line 96, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 .title .title-main h1 {
   color: white;
   font-weight: 400;
@@ -116,7 +164,7 @@ header {
   text-transform: uppercase;
   line-height: 1.1em;
 }
-/* line 107, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 .title .title-circle {
   width: 150px;
   height: 150px;
@@ -137,16 +185,16 @@ header {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 123, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .title .title-circle h4 {
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 128, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 .title .title-description {
   margin-top: 20px;
 }
-/* line 130, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .title .title-description p {
   font-family: 'Lora', serif;
 }
