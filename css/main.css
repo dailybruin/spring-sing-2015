@@ -1,3 +1,41 @@
+#news {
+  text-align: center;
+  font-family:'Roboto', serif;
+    display: table;
+  width: 100%;
+  height: auto;
+  letter-spacing: 2px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#news h3 {
+  letter-spacing: 2px;
+}
+
+#news-articles, #feeds {
+  height: auto;
+}
+
+#instafeed {
+  background-color: #413659;
+  padding: 10px;
+}
+
+#instafeed h3{
+  color: white;
+}
+
+#feeds{
+  max-width: 70em;
+}
+
+#twitterfeed h3 {
+  color: #413659;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', serif;
+}
 /* line 3, ../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
