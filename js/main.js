@@ -1,15 +1,3 @@
-// $( function() {
-  
-//   $('.isotope').isotope({
-//     itemSelector: '.item',
-//     masonry: {
-//       columnWidth: 100,
-//       gutter: 10
-//     }
-//   });
-
-// });
-
 var itemHeight = $('.item').width(); 
 
 
@@ -33,6 +21,6 @@ $(window).load(function(){
 
 
 })
-$(window).resize(function(){window.location.href=window.location.href})
+// $(window).resize(function(){window.location.href=window.location.href})
 
 

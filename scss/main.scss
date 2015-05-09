@@ -42,6 +42,7 @@ header {
 
 .item {
 	margin-bottom: 10px;
+	padding: 0;
 	h6 {
 		margin-top: 0;
 	}
@@ -52,8 +53,10 @@ header {
 
 }
 
+
 .overlay:hover .description {
 	@include vendorize(opacity, 1);
+	display:block; 
 }
 
 .description {
