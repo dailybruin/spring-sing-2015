@@ -45,20 +45,15 @@ header {
 
 /* line 43, ../scss/main.scss */
 .item {
+  overflow: hidden;
   margin-bottom: 10px;
-  padding: 0;
 }
-/* line 46, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 .item h6 {
   margin-top: 0;
 }
 
-/* line 51, ../scss/main.scss */
-.overlay {
-  overflow: hidden;
-}
-
-/* line 57, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .overlay:hover .description {
   -webkit-opacity: 1;
   -moz-opacity: 1;
@@ -68,7 +63,7 @@ header {
   display: block;
 }
 
-/* line 62, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .description {
   height: 100%;
   width: 100%;
@@ -92,17 +87,17 @@ header {
   max-width: 62.5rem;
 }
 */
-/* line 86, ../scss/main.scss */
+/* line 84, ../scss/main.scss */
 #talent-profiles h1 {
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
 
-/* line 93, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 .title {
   margin-top: 15%;
 }
-/* line 95, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 .title .title-main {
   -webkit-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
@@ -110,7 +105,7 @@ header {
   -o-transform: skewY(-6deg);
   transform: skewY(-6deg);
 }
-/* line 98, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 .title .title-main h1 {
   color: white;
   font-weight: 400;
@@ -121,7 +116,7 @@ header {
   text-transform: uppercase;
   line-height: 1.1em;
 }
-/* line 109, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .title .title-circle {
   width: 150px;
   height: 150px;
@@ -142,16 +137,16 @@ header {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 125, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .title .title-circle h4 {
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 130, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 .title .title-description {
   margin-top: 20px;
 }
-/* line 132, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 .title .title-description p {
   font-family: 'Lora', serif;
 }
