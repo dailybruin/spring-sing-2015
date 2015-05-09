@@ -1,9 +1,16 @@
 /* line 3, ../scss/main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../scss/main.scss */
 header {
   height: 20%;
 }
 
-/* line 7, ../scss/main.scss */
+/* line 13, ../scss/main.scss */
 .intro {
   display: table;
   width: 100%;
@@ -19,7 +26,7 @@ header {
   height: 690px;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 28, ../scss/main.scss */
 #wrap {
   width: 100%;
   height: 100%;
@@ -27,13 +34,52 @@ header {
   background-color: black;
   overflow: hidden;
 }
-/* line 28, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 #wrap img.bgfade {
   position: absolute;
   top: 0;
   width: 100%;
   overflow: hidden;
   display: block;
+}
+
+/* line 43, ../scss/main.scss */
+.item {
+  margin-bottom: 10px;
+}
+/* line 45, ../scss/main.scss */
+.item h6 {
+  margin-top: 0;
+}
+
+/* line 50, ../scss/main.scss */
+.overlay {
+  overflow: hidden;
+}
+
+/* line 55, ../scss/main.scss */
+.overlay:hover .description {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+/* line 59, ../scss/main.scss */
+.description {
+  height: 100%;
+  width: 100%;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 600ms ease-in-out;
+  -moz-transition: opacity 600ms ease-in-out;
+  -o-transition: opacity 600ms ease-in-out;
+  transition: opacity 600ms ease-in-out;
 }
 
 /*.row {
@@ -44,11 +90,17 @@ header {
   max-width: 62.5rem;
 }
 */
-/* line 56, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
+#talent-profiles h1 {
+  font-family: 'Montserrat', serif;
+  margin-bottom: 30px;
+}
+
+/* line 90, ../scss/main.scss */
 .title {
   margin-top: 15%;
 }
-/* line 58, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 .title .title-main {
   -webkit-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
@@ -56,7 +108,7 @@ header {
   -o-transform: skewY(-6deg);
   transform: skewY(-6deg);
 }
-/* line 61, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 .title .title-main h1 {
   color: white;
   font-weight: 400;
@@ -67,7 +119,7 @@ header {
   text-transform: uppercase;
   line-height: 1.1em;
 }
-/* line 72, ../scss/main.scss */
+/* line 106, ../scss/main.scss */
 .title .title-circle {
   width: 150px;
   height: 150px;
@@ -88,16 +140,16 @@ header {
   -o-transform: rotate(10deg);
   transform: rotate(10deg);
 }
-/* line 88, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 .title .title-circle h4 {
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 93, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 .title .title-description {
   margin-top: 20px;
 }
-/* line 95, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 .title .title-description p {
   font-family: 'Lora', serif;
 }

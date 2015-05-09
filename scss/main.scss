@@ -1,5 +1,11 @@
 @import "mixins";
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   height: 20%;
 }
@@ -34,6 +40,35 @@ header {
   }
 }
 
+.item {
+	margin-bottom: 10px;
+	h6 {
+		margin-top: 0;
+	}
+}
+
+.overlay {
+	overflow: hidden;
+
+}
+
+.overlay:hover .description {
+	@include vendorize(opacity, 1);
+}
+
+.description {
+	height: 100%;
+	width: 100%;
+	@include vendorize(opacity, 0);
+
+	background-color: rgba(0, 0, 0, 0.8);
+  
+  -webkit-transition: opacity 600ms ease-in-out;
+  -moz-transition: opacity 600ms ease-in-out;
+  -o-transition: opacity 600ms ease-in-out;
+  transition: opacity 600ms ease-in-out;
+}
+
 /*.row {
   width: 100%;
   margin-left: auto;
@@ -43,14 +78,13 @@ header {
 }
 */
 
-header {
-  // h4 {
-  //   color: white;
-  //   font-weight: 300;
-  //   margin-top: 0;
-  //   font-size: 1.25rem;
-  //   line-height: 1.5;
-  // }
+#talent-profiles {
+	// height: 100%;
+	h1 {
+		font-family: 'Montserrat', serif;
+		margin-bottom: 30px;
+		// text-transform: uppercase;
+	}
 }
 
 .title {
