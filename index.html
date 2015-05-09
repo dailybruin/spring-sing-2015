@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UCLA Spring Sing 2015</title>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css" />
     <link href='http://fonts.googleapis.com/css?family=Lora|Montserrat|Abril+Fatface' rel='stylesheet' type='text/css'>
 
     <script src="js/vendor/modernizr.js"></script>    
     <!-- include jQuery library -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
       <script src="js/main.js"></script>
   </head>
   <body>
@@ -42,8 +43,12 @@
     <div class="large-12 columns">
       <div class="row">
         <div class="small-6 large-2 columns solos">
-          <img class="panel overlay" src="http://placehold.it/250x250"/>
+          <img class="panel overlay" src="http://placehold.it/250x250"/> <!--<a href="#" data-reveal-id="solo-modal-1">Click</a>-->
         </div>
+        <!--<div id="solo-modal-1" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h2 id="modalTitle">Herro</div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>-->
         <div class="small-6 large-2 columns overlay solos">
           <img class="panel" src="http://placehold.it/250x250"/>
         </div>
@@ -103,6 +108,13 @@
     </div>
   </div> <!--/end Talent Profile Grid-->
        
+  <a href="#" class="button" data-reveal-id="myModal">Click Me For A Modal</a>
+
+  <div id="myModal" class="reveal-modal" data-reveal>
+    <h2>Modal here.</h2>
+    <a class="close-reveal-modal">x</a>
+  </div>
+
         <footer class="row">
           <div class="large-12 columns">
             <hr>
@@ -118,7 +130,8 @@
 
 
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
     <script src="js/main.js"></script>
     <script>
       $(document).foundation();
