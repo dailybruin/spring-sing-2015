@@ -153,3 +153,8 @@ header {
 .title .title-description p {
   font-family: 'Lora', serif;
 }
+
+#news h1 {
+  font-family: 'Montserrat', serif;
+  margin-bottom: 30px;
+}
