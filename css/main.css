@@ -237,9 +237,7 @@ header {
 
 /* == News Section ==*/
 .article {
-  padding-top: 5px;
-  height: 100%;
-  width: 100%;
+  text-align: center;
 }
 
 .article h6{
@@ -259,33 +257,37 @@ header {
   font-style: bold;
   color: gray;
 }
-
- .overlay {
-   overflow: hidden;
+ .article h4 {
+  color: #F2EFDF;
+  font-style: bold;
  }
- 
- /* line 57, ../scss/main.scss */
- .overlay:hover .article-description {
+
+ .article img {
+    width: 100%;
+   vertical-align: center;
+ }
+
+ /* line 62, ../scss/main.scss */
+ .article-description {
+   width: 100%;
+   padding: 15px;
+   text-align: left;
    -webkit-opacity: 1;
    -moz-opacity: 1;
    -ms-opacity: 1;
    -o-opacity: 1;
    opacity: 1;
-   display: block;
- }
- 
- /* line 62, ../scss/main.scss */
- .article-description {
-   height: 100%;
-   width: 100%;
-   -webkit-opacity: 0;
-   -moz-opacity: 0;
-   -ms-opacity: 0;
-   -o-opacity: 0;
-   opacity: 0;
-   background-color: rgba(0, 0, 0, 0.8);
+   background-color: rgba(0, 0, 0, 0.4);
    -webkit-transition: opacity 600ms ease-in-out;
 }
+.article-description @media only screen and (max-width: 40em){
+  padding: none;
+}
+
+.row .row .articles {
+  margin-bottom: 20px;
+}
+
 
   #news {
    text-align: center;
@@ -301,7 +303,5 @@ header {
  }
 
 
- #news-articles h4 {
-  color: #F2EFDF;
-  font-style: bold;
- }
+
+
