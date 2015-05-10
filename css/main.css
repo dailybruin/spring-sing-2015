@@ -302,6 +302,39 @@ header {
   -o-background-size: cover;
  }
 
+#feeds {
+  padding-top: 20px;
+    -webkit-padding-top: 1;
+   -moz-padding-top: 1;
+   -ms-opacity: 1;
+   -o-opacity: 1;
+}
 
+/*#instafeed{
+  border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}*/
 
+#instafeed h3{
+  color:#E2EAAB;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
+#instafeed img{
+  width: 25%;
+}
+
+#feeds {
+   border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}
+
+#twitterfeed h3{
+  color:#E2EAAB;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
