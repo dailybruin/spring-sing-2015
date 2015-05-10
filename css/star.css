@@ -34,11 +34,6 @@ h2 a{
  background: #F6F6F6;
  overflow: hidden;
  z-index: -1;
- animation: glitter 4.5s linear 0s infinite normal;
- -webkit-animation: glitter 4.5s linear 0s infinite normal;
- -moz-animation: glitter 4.5s linear 0s infinite normal;
- -ms-animation: glitter 4.5s linear 0s infinite normal;
- -o-animation: glitter 4.5s linear 0s infinite normal;
 }
 .star-top,.star-bottom{
  position: relative;
@@ -71,19 +66,4 @@ h2 a{
 .star-bottom:after {
  top: 24px;
  left: 24px;
-}
-/*CSS3 keyframes for glittering effect*/
-@-webkit-keyframes glitter {
- 0%   { -webkit-transform: scale(1.0); opacity: 1; }
- 25%  { -webkit-transform: scale(0.5); opacity: 0; }
- 50%  { -webkit-transform: scale(1.0); opacity: 1; }
- 75%  { -webkit-transform: scale(0.5); opacity: 0; }
- 100% { -webkit-transform: scale(1.0); opacity: 1; }
-}
-@-moz-keyframes glitter {
- 0%   { -moz-transform: scale(1.0); opacity: 1; }
- 25%  { -moz-transform: scale(0.5); opacity: 0; }
- 50%  { -moz-transform: scale(1.0); opacity: 1; }
- 75%  { -moz-transform: scale(0.5); opacity: 0; }
- 100% { -moz-transform: scale(1.0); opacity: 1; }
 }
