@@ -19,11 +19,11 @@ $(window).ready(function() {
     "transform":"skewY(-6deg)"
   });
   $('.title-circle').css({
-    "webkitTransform":"rotate(10deg)",
-    "MozTransform":"rotate(10deg)",
-    "msTransform":"rotate(10deg)",
-    "OTransform":"rotate(10deg)",
-    "transform":"rotate(10deg)"
+    "webkitTransform":"rotate(8deg)",
+    "MozTransform":"rotate(8deg)",
+    "msTransform":"rotate(8deg)",
+    "OTransform":"rotate(8deg)",
+    "transform":"rotate(8deg)"
   });
 
   $('.popup').each(function(i){

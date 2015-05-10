@@ -18,20 +18,18 @@ header {
   color: #fff;
   letter-spacing: 2px;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 690px;
+	background-size: cover;
+	height: 100%;
 }
 
 #wrap {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: black;
-  background: url('http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg');
-  display:none;
+
+  // background: url('http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg');
+  background: url(../img/header.jpg);
+  // display:none;
   background-size: cover;
   overflow: hidden;
   // opacity: 0;
@@ -43,6 +41,80 @@ header {
   //   display: block;
   // }
 }
+
+.title {
+	margin-top: 10%;
+	.title-main {
+		position: relative;
+		z-index: 10; 
+		@include vendorize(transition, transform 1s ease-in-out);
+		// @include vendorize(transform, skewY(-6deg));
+
+		h1 {
+			text-shadow: 2px 2px rgb(92, 92, 92);
+			color: white;
+	    font-weight: 400;
+	    margin-bottom: 0;
+	    font-size: 7em;
+	    text-align: center;
+	    font-family: 'Abril Fatface', serif; 
+	    text-transform: uppercase; 
+	    line-height: 1.1em;
+		}
+	}
+	.title-circle {
+		z-index: 2;
+		width: 150px;
+	  height: 150px;
+	  border-radius: 80px;
+	  background-color: rgba(225, 236, 75,0.8);
+	  // text-align: center;
+	  // border: 2px dashed white;
+	  position: absolute;
+	  top: -40px;
+	  right: 15px;
+	  
+	  line-height: 0.6em;
+	  padding-left: 35px;
+  	padding-top: 40px;
+	  font-weight: bold;
+	  // letter-spacing: 6px;
+	  padding-left: 8px;
+	  @include vendorize(transition, transform 2s ease-in-out);
+	  // @include vendorize(transform, rotate(10deg));
+		h4 {
+			font-size: 3em;
+			// text-align: left;
+			// opacity: 0;
+			// @include vendorize(transition, opacity 1s ease-in-out);
+			color:rgb(80, 81, 97);;
+			font-family: 'Montserrat', sans-serif; 
+		}
+	}
+	.title-description {
+		@include vendorize(transform, skewY(-6deg));
+		padding: 0px 40px;
+		margin-top: 20px;
+		p {
+			font-family: 'Lora', serif;
+		}
+	}
+	.title-bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width:550px; 
+		height: 550px;
+		// background-color: rgba(0,0,0,0.5);
+		border-radius: 50%;
+		background-color: rgba(53, 79, 126, 0.5);
+	}
+
+}
+
 
 .item {
 	overflow:hidden;
@@ -161,52 +233,40 @@ header {
 	}
 }
 
-.title {
-	margin-top: 10%;
-	.title-main {
-		@include vendorize(transition, transform 1s ease-in-out);
-		// @include vendorize(transform, skewY(-6deg));
-
-		h1 {
-			color: white;
-	    font-weight: 400;
-	    margin-bottom: 0;
-	    font-size: 7em;
-	    text-align: center;
-	    font-family: 'Abril Fatface', serif; 
-	    text-transform: uppercase; 
-	    line-height: 1.1em;
-		}
-	}
-	.title-circle {
-		width: 150px;
-	  height: 150px;
-	  border-radius: 80px;
-	  // text-align: center;
-	  border: 2px dashed white;
-	  position: absolute;
-	  top: -40px;
-	  right: 15px;
-	  font-size: .75em;
-	  line-height: 1.15em;
-	  padding-top: 40px;
-	  font-weight: bold;
-	  letter-spacing: 6px;
-	  padding-left: 8px;
-	  @include vendorize(transition, transform 2s ease-in-out);
-	  // @include vendorize(transform, rotate(10deg));
-		h4 {
-			// opacity: 0;
-			// @include vendorize(transition, opacity 1s ease-in-out);
-			color: white;
-			font-family: 'Montserrat', sans-serif; 
-		}
-	}
-	.title-description {
-		padding: 20px;
-		margin-top: 20px;
-		p {
-			font-family: 'Lora', serif;
-		}
-	}
+#feeds {
+  padding-top: 20px;
+    -webkit-padding-top: 1;
+   -moz-padding-top: 1;
+   -ms-opacity: 1;
+   -o-opacity: 1;
 }
+
+/*#instafeed{
+  border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}*/
+
+#instafeed h3{
+  color:#E2EAAB;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+ 
+#instafeed img{
+  width: 25%;
+}
+ 
+#feeds {
+   border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}
+ 
+#twitterfeed h3{
+  color:#E2EAAB;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
