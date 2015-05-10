@@ -224,6 +224,17 @@ header {
   font-family: 'Lora', serif;
 }
 
+/* color palette from: https://color.adobe.com/Dreams-Forever-color-theme-2208291/ */
+
+/* == General ==*/
+.section-header h1 {
+   color: #866FB8;
+   text-align: left;
+   font-family: 'Montserrat', serif;
+   margin-bottom: 30px;
+   letter-spacing: 3px;
+ }
+
 /* == News Section ==*/
 .article {
   padding-top: 5px;
@@ -237,7 +248,16 @@ header {
   width: 100%;
   margin: 5px;
   padding: 5px;
-  color: white;
+  color: #84A891;
+}
+.article a {
+  color: #F2EFDF;
+  font-style: italic;
+}
+
+.article a:hover {
+  font-style: bold;
+  color: gray;
 }
 
  .overlay {
@@ -245,7 +265,7 @@ header {
  }
  
  /* line 57, ../scss/main.scss */
- .overlay:hover .description {
+ .overlay:hover .article-description {
    -webkit-opacity: 1;
    -moz-opacity: 1;
    -ms-opacity: 1;
@@ -255,7 +275,7 @@ header {
  }
  
  /* line 62, ../scss/main.scss */
- .description {
+ .article-description {
    height: 100%;
    width: 100%;
    -webkit-opacity: 0;
@@ -280,15 +300,8 @@ header {
   -o-background-size: cover;
  }
 
-.section-header h1 {
-   color: #866FB8;
-   text-align: left;
-   font-family: 'Montserrat', serif;
-   margin-bottom: 30px;
-   letter-spacing: 3px;
- }
 
  #news-articles h4 {
-  color: white;
+  color: #F2EFDF;
   font-style: bold;
  }
