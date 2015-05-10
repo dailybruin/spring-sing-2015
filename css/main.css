@@ -22,6 +22,7 @@
 
 #feeds {
   max-width: 62.5rem;
+  float: none;
 }
 .article {
   padding-top: 5px;
@@ -39,11 +40,14 @@
 
 #instafeed {
   background-color: #413659;
-  padding: 10px;
+   padding-left: 10px;
+   width: 100%;
+
 }
 
+
+
 #instafeed img {
-  padding: 5px;
   border-radius: 15px;
 }
 
@@ -56,6 +60,8 @@
 
 #twitterfeed {
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 #twitterfeed h3 {
