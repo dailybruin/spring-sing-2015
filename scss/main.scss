@@ -30,7 +30,8 @@ header {
   height: 100%;
   position: absolute;
   background-color: black;
-  // background: url('http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg');
+  background: url('http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg');
+  display:none;
   background-size: cover;
   overflow: hidden;
   // opacity: 0;
@@ -153,6 +154,7 @@ header {
 #talent-profiles {
 	// height: 100%;
 	h1 {
+		color: white;
 		font-family: 'Montserrat', serif;
 		margin-bottom: 30px;
 		// text-transform: uppercase;
