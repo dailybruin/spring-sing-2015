@@ -1,3 +1,4 @@
+
 /* line 3, ../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -222,3 +223,60 @@ header {
 .title .title-description p {
   font-family: 'Lora', serif;
 }
+
+/* == News Section ==*/
+.article {
+  padding-top: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.article h6{
+  @include vendorize(opacity, 1);
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+}
+
+ .overlay {
+   overflow: hidden;
+ }
+ 
+ /* line 57, ../scss/main.scss */
+ .overlay:hover .description {
+   -webkit-opacity: 1;
+   -moz-opacity: 1;
+   -ms-opacity: 1;
+   -o-opacity: 1;
+   opacity: 1;
+   display: block;
+ }
+ 
+ /* line 62, ../scss/main.scss */
+ .description {
+   height: 100%;
+   width: 100%;
+   -webkit-opacity: 0;
+   -moz-opacity: 0;
+   -ms-opacity: 0;
+   -o-opacity: 0;
+   opacity: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   -webkit-transition: opacity 600ms ease-in-out;
+}
+
+    #news {
+   text-align: center;
+   font-family:'Roboto', serif;
+   display: table;
+   width: 100%;
+   height: auto;
+   letter-spacing: 2px;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+   background-size: cover;
+  -o-background-size: cover;
+  color: white;
+ }
