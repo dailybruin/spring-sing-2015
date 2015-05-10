@@ -1,14 +1,12 @@
-var limit=1500, // Max number of stars
+var limit=300, // Max number of stars
 body=document.body;
 loop={
  //initilizeing
  start:function(){
   for (var i=0; i <= limit; i++) {
    var star=this.newStar();
-   star.style.top=this.rand()*500+"%";
-   star.style.left=this.rand()*500+"%";
-   star.style.webkitAnimationDelay=this.rand()+"s";
-   star.style.mozAnimationDelay=this.rand()+"s";
+   star.style.top=this.rand()*550+"%";
+   star.style.left=this.rand()*95+"%";
    body.appendChild(star);
   };
  },
