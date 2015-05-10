@@ -160,7 +160,7 @@ header {
 
 /* line 156, ../scss/main.scss */
 #talent-profiles h1 {
-  color: white;
+  /*color: white;*/
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
@@ -267,7 +267,7 @@ header {
    -webkit-transition: opacity 600ms ease-in-out;
 }
 
-    #news {
+  #news {
    text-align: center;
    font-family:'Roboto', serif;
    display: table;
@@ -278,5 +278,17 @@ header {
  -moz-background-size: cover;
    background-size: cover;
   -o-background-size: cover;
+ }
+
+.section-header h1 {
+   color: #866FB8;
+   text-align: left;
+   font-family: 'Montserrat', serif;
+   margin-bottom: 30px;
+   letter-spacing: 3px;
+ }
+
+ #news-articles h4 {
   color: white;
+  font-style: bold;
  }
