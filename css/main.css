@@ -1,3 +1,79 @@
+#news {
+  font-family:'Roboto', serif;
+    display: table;
+  height: auto;
+  letter-spacing: 2px;
+  color: white;
+}
+
+#news h1 {
+  color: #413659;
+}
+#news h3, h4 {
+  font-family: 'Montserrat', serif;
+  color: white;
+  text-align: center;
+}
+
+#news-articles {
+  height: auto;
+  max-width: 62.5rem;
+} 
+
+#feeds {
+  max-width: 62.5rem;
+  float: none;
+}
+.article {
+  padding-top: 5px;
+  height: 100%;
+  width: 100%;
+}
+.article h6{
+  @include vendorize(opacity, 1);
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#instafeed {
+  background-color: #413659;
+   padding-left: 10px;
+   width: 100%;
+
+}
+
+
+
+#instafeed img {
+  border-radius: 15px;
+}
+
+/* line 57, ../scss/main.scss */
+#instafeed img:hover {
+  background-color: rgba(155, 128, 212, 0.8);
+  bottom: 0;left: 0; top: 0; right: 0;
+  margin: auto;
+}
+
+#twitterfeed {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#twitterfeed h3 {
+  color: #413659;
+
+}
+
+
+
+
+
+
 /* line 3, ../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
