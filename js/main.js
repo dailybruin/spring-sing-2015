@@ -31,7 +31,17 @@ $(window).ready(function() {
 
     var text = $($('.item-type')[i]).children('h6')[0].textContent;
     
-    append += '<h6 style="font-family:\'Montserrat\', \'sans-serif\';">' + text + '</h6>';   
+    append += '<h6 style="font-family:\'Montserrat\', \'sans-serif\'; text-align: center;">' + text + '</h6>';  
+
+    var bg = $(".item")[i];
+    bg = $(bg).css("background-image");
+    bg = bg.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '') 
+
+
+
+    
+
+    append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
     
     $(this).append(append);
 
