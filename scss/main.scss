@@ -313,3 +313,18 @@ a {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 479px) {
+	.title-bg {
+		display: none;
+	}
+	.title-circle {
+		display: none;
+	}
+	.title .title-main {
+		h1 {
+			font-size: 4em;
+		}
+	}
+}
+
+

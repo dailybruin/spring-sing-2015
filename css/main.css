@@ -320,3 +320,20 @@ header {
 .row .row .articles {
   margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 479px) {
+  /* line 317, ../scss/main.scss */
+  .title-bg {
+    display: none;
+  }
+
+  /* line 320, ../scss/main.scss */
+  .title-circle {
+    display: none;
+  }
+
+  /* line 324, ../scss/main.scss */
+  .title .title-main h1 {
+    font-size: 4em;
+  }
+}
