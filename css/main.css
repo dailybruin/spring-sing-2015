@@ -235,7 +235,6 @@ header {
 
 /* line 228, ../scss/main.scss */
 #talent-profiles h1 {
-  color: white;
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
@@ -255,7 +254,7 @@ header {
 }*/
 /* line 249, ../scss/main.scss */
 #instafeed h3 {
-  color: #E2EAAB;
+  color: #C1D9E3;
   text-align: center;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -269,12 +268,12 @@ header {
 /* line 260, ../scss/main.scss */
 #feeds {
   border-radius: 10px;
-  border: 1px solid #E2EAAB;
+  border: 1px solid #57C2A3;
 }
 
 /* line 265, ../scss/main.scss */
 #twitterfeed h3 {
-  color: #E2EAAB;
+  color: #C1D9E3;
   text-align: center;
   letter-spacing: 2px;
   padding: 10px;
@@ -307,13 +306,23 @@ header {
   border: 1px solid #E2EAAB;
 }*/
  .article h4 {
- color: #F2EFDF;
+ color: #659FB7;
  font-style: bold;
  }
 
   .article h6{
    font-style: bold;
-   color: gray;
+   color: #C1D9E3;
+ }
+
+ .article a {
+  color: #F2EFDF;
+  font-style: italic;
+ }
+
+ .article a:hover {
+  font-style: bold;
+  color: #566561;
  }
 .article-description {
   width: 100%;
@@ -335,6 +344,8 @@ header {
   margin-bottom: 20px;
 }
 
-.section-header {
+.section-header h1 {
   text-align: left;
+  color: #F2EFDF;
+  text-shadow: 1px 0.5px black;
 }
