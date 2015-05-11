@@ -2,7 +2,7 @@
   
  $(document).ready(function(){
 
-  var mainURL="http://graphics.dailybruin.com/spring-sing-2015/"
+  var mainURL="./"
 
   //parse url and open the correct modal
   var hash=window.location.hash;
