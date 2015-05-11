@@ -150,7 +150,7 @@ header {
 	background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -199,7 +199,7 @@ header {
   top: 30%;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(117, 234, 204, 0.46);
 	// border: 2px solid white;
 	// height: 50%;
 	// width: 50%;
@@ -247,8 +247,9 @@ header {
 }*/
 
 #instafeed h3{
-  color:#E2EAAB;
-  text-align: center;
+  // color:#E2EAAB;
+  color: white;
+  // text-align: center;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
@@ -277,13 +278,15 @@ header {
 }*/
 .article { 
  h4 {
- color: #659FB7;
+ // color: #659FB7;
+ color: white;
  font-style: bold;
  }
 
 h6{
  font-style: bold;
- color: #C1D9E3;
+ // color: #C1D9E3;
+ color: white;
 }
 
 a {
@@ -291,7 +294,8 @@ a {
 	font-style: italic;
 	&:hover {
 		font-style: bold;
-  	color: #566561;
+  	// color: #566561;
+  	color: #57C2A3;
 
 	}
 }
@@ -299,11 +303,19 @@ a {
 
 
 .article-description {
+
   width: 100%;
   padding: 15px;
   text-align: left;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.4);
+  h4 {
+  	font-family: 'Lora', sans-serif; 
+  }
+  h6 {
+  	font-family: 'Lora', sans-serif; 
+
+  }
  }
 
 

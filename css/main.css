@@ -156,7 +156,7 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -219,7 +219,7 @@ header {
   top: 30%;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(117, 234, 204, 0.46);
 }
 /* line 213, ../scss/main.scss */
 .item-name h1 {
@@ -255,25 +255,24 @@ header {
 }*/
 /* line 249, ../scss/main.scss */
 #instafeed h3 {
-  color: #E2EAAB;
-  text-align: center;
+  color: white;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
 }
 
-/* line 257, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 #instafeed img {
   width: 25%;
 }
 
-/* line 261, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 #feeds {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }
 
-/* line 266, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 #twitterfeed h3 {
   color: #E2EAAB;
   text-align: center;
@@ -286,28 +285,28 @@ header {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
-/* line 279, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 .article h4 {
-  color: #659FB7;
+  color: white;
   font-style: bold;
 }
-/* line 284, ../scss/main.scss */
+/* line 286, ../scss/main.scss */
 .article h6 {
   font-style: bold;
-  color: #C1D9E3;
+  color: white;
 }
-/* line 289, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 .article a {
   color: #F2EFDF;
   font-style: italic;
 }
-/* line 292, ../scss/main.scss */
+/* line 295, ../scss/main.scss */
 .article a:hover {
   font-style: bold;
-  color: #566561;
+  color: #57C2A3;
 }
 
-/* line 301, ../scss/main.scss */
+/* line 305, ../scss/main.scss */
 .article-description {
   width: 100%;
   padding: 15px;
@@ -315,24 +314,32 @@ header {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 /* line 312, ../scss/main.scss */
+.article-description h4 {
+  font-family: 'Lora', sans-serif;
+}
+/* line 315, ../scss/main.scss */
+.article-description h6 {
+  font-family: 'Lora', sans-serif;
+}
+
+/* line 324, ../scss/main.scss */
 .row .row .articles {
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 317, ../scss/main.scss */
+  /* line 329, ../scss/main.scss */
   .title-bg {
     display: none;
   }
 
-  /* line 320, ../scss/main.scss */
+  /* line 332, ../scss/main.scss */
   .title-circle {
     display: none;
   }
 
-  /* line 324, ../scss/main.scss */
+  /* line 336, ../scss/main.scss */
   .title .title-main h1 {
     font-size: 4em;
   }
