@@ -1,6 +1,24 @@
+
+
 //////////deep linking stuff/////////////
   
  $(document).ready(function(){
+
+  var $thumbs = $(".item");
+  var $btns = $(".btn").on("click", function() {
+    
+    var active = 
+      $btns.removeClass("active")
+        .filter(this)
+        .addClass("active")
+        .data("filter");
+    
+    $thumbs
+      .hide()
+      .filter( "." + active )
+      .fadeIn(450);
+
+  });
 
   var mainURL="./index.html"
 

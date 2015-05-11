@@ -47,7 +47,16 @@
 
     <div class="large-12 columns">
       <div class="row section-header">
-        <h1><i class="fa fa-users" style="color:#75EACC;"></i> Talent Profiles </h1>
+        <h1 style="margin-bottom: 0px;"><i class="fa fa-users" style="color:#75EACC;"></i> Talent Profiles </h1>
+      </div>
+      <div class="row" id="filters">
+        <!-- <span style="color: white; padding: 10px 0px; font-size: 0.8em; font-family: 'Montserrat'; padding-right: 10px; ">FILTERS : </span> -->
+        <button class="active btn" data-filter="item">All</button>
+        <button class="btn" data-filter="solos">Solos</button>
+        <button class="btn" data-filter="duets">Duets</button>
+        <button class="btn" data-filter="bands">Bands</button>
+        <button class="btn" data-filter="acapella">Acapella</button>
+        <button class="btn" data-filter="production">Production</button>
       </div>
       <div class="row">
         <div class="small-12 medium-6 large-4 columns item solos" style="background: url(./img/natalie_brainin_square.jpg); background-size: cover; overflow:hidden;" data-reveal-id="modal-solo-1">
@@ -105,7 +114,7 @@
         <div class="small-12 medium-4 large-4 columns item solos" style="display: none;" data-reveal-id="modal-solo-4">
           <img class="panel" src="http://www.placehold.it/250x250"/>
         </div>
-        <div class="small-12 medium-4 large-4 columns item duets" style="display: none;" data-reveal-id="modal-duet-1">
+        <div class="small-12 medium-4 large-4 columns item duets" data-reveal-id="modal-duet-1">
           <img class="panel" src="http://www.placehold.it/250x250"/>
         </div>
         <div class="small-12 medium-4 large-4 columns item duets" style="display: none;" data-reveal-id="modal-duet-2">
@@ -114,7 +123,7 @@
         <div class="small-12 medium-4 large-4 columns item duets" style="display: none;" data-reveal-id="modal-duet-3">
           <img class="panel" src="http://www.placehold.it/250x250"/>
         </div>
-        <div class="small-12 medium-4 large-4 columns item bands" style="display: none;" data-reveal-id="modal-band-1">
+        <div class="small-12 medium-4 large-4 columns item bands" data-reveal-id="modal-band-1">
           <img class="panel" src="http://www.placehold.it/250x250"/>
         </div>
         <div class="small-12 medium-4 large-4 columns item bands" style="display: none;" data-reveal-id="modal-band-2">
