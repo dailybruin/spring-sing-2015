@@ -29,9 +29,12 @@ $(window).ready(function() {
   $('.popup').each(function(i){
     var append = '<a class="close-reveal-modal">x</a>';
 
-    var text = $($('.item-type')[i]).children('h6')[0].textContent;
+    var artist = $($('.item-name')[i]).children('h1')[0].textContent;
+    append += '<h1 style="font-family:\'Lora\', \'sserif\'; text-align: center;">' + artist + '</h1>';  
+
+    var type = $($('.item-type')[i]).children('h6')[0].textContent;
     
-    append += '<h6 style="font-family:\'Montserrat\', \'sans-serif\'; text-align: center;">' + text + '</h6>';  
+    append += '<h6 style="font-family:\'Montserrat\', \'sans-serif\'; text-align: center;">' + type + '</h6>';  
 
     var bg = $(".item")[i];
     bg = $(bg).css("background-image");
@@ -43,7 +46,7 @@ $(window).ready(function() {
 
     append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
     
-    $(this).append(append);
+    $(this).prepend(append);
 
     // $('.item .item-type')[i].append()
   })

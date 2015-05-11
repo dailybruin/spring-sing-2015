@@ -98,9 +98,11 @@ header {
 }
 /* line 98, ../scss/main.scss */
 .title .title-description p {
+  font-size: 0.8em;
   font-family: 'Lora', serif;
+  text-shadow: 1px 1px #5c5c5c;
 }
-/* line 102, ../scss/main.scss */
+/* line 105, ../scss/main.scss */
 .title .title-bg {
   position: absolute;
   top: 0;
@@ -114,22 +116,22 @@ header {
   background-color: rgba(53, 79, 126, 0.5);
 }
 
-/* line 119, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 .item {
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 123, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .item h6 {
   margin-top: 0;
 }
 
-/* line 131, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .item-overlay {
   width: 100%;
   height: 100%;
 }
-/* line 134, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .item-overlay:hover .item-description {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -137,7 +139,7 @@ header {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-/* line 137, ../scss/main.scss */
+/* line 140, ../scss/main.scss */
 .item-overlay:hover .item-type {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -145,18 +147,18 @@ header {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-/* line 140, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .item-overlay:hover {
   cursor: pointer;
 }
 
-/* line 147, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 .item-description {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -171,12 +173,16 @@ header {
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 160, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
+.item-description li {
+  font-family: 'Lora', serif;
+}
+/* line 165, ../scss/main.scss */
 .item-description h6 {
   font-family: 'Lora', serif;
 }
 
-/* line 166, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .item-type {
   padding: 5px;
   text-align: center;
@@ -198,7 +204,7 @@ header {
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 180, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 .item-type h6 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -211,7 +217,7 @@ header {
   max-width: 62.5rem;
 }
 */
-/* line 195, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .item-name {
   position: absolute;
   pointer-events: none;
@@ -221,26 +227,34 @@ header {
   right: 0;
   background-color: rgba(117, 234, 204, 0.46);
 }
-/* line 213, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .item-name h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 
-/* line 221, ../scss/main.scss */
-.popup h2 {
+/* line 227, ../scss/main.scss */
+.popup h1 {
+  margin-bottom: 0;
+}
+/* line 230, ../scss/main.scss */
+.popup img {
+  margin-bottom: 10px;
+}
+/* line 233, ../scss/main.scss */
+.popup h2, .popup h4, .popup p {
   font-family: 'Lora', serif;
 }
 
-/* line 228, ../scss/main.scss */
+/* line 242, ../scss/main.scss */
 #talent-profiles h1 {
   color: white;
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
 
-/* line 236, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 #feeds {
   padding-top: 20px;
   -webkit-padding-top: 1;
@@ -253,7 +267,7 @@ header {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
-/* line 249, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 #instafeed h3 {
   color: white;
   letter-spacing: 2px;
@@ -261,18 +275,18 @@ header {
   padding: 10px;
 }
 
-/* line 258, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 #instafeed img {
   width: 25%;
 }
 
-/* line 262, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 #feeds {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }
 
-/* line 267, ../scss/main.scss */
+/* line 281, ../scss/main.scss */
 #twitterfeed h3 {
   color: #E2EAAB;
   text-align: center;
@@ -285,61 +299,63 @@ header {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
-/* line 280, ../scss/main.scss */
+/* line 294, ../scss/main.scss */
 .article h4 {
   color: white;
-  font-style: bold;
-}
-/* line 286, ../scss/main.scss */
-.article h6 {
-  font-style: bold;
-  color: white;
-}
-/* line 292, ../scss/main.scss */
-.article a {
-  color: #F2EFDF;
   font-style: italic;
 }
-/* line 295, ../scss/main.scss */
+/* line 300, ../scss/main.scss */
+.article h6 {
+  font-style: bold;
+  color: #c2c2c2;
+}
+/* line 306, ../scss/main.scss */
+.article a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: white;
+}
+/* line 313, ../scss/main.scss */
 .article a:hover {
   font-style: bold;
   color: #57C2A3;
 }
 
-/* line 305, ../scss/main.scss */
+/* line 323, ../scss/main.scss */
 .article-description {
   width: 100%;
   padding: 15px;
   text-align: left;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(87, 194, 163, 0.3);
 }
-/* line 312, ../scss/main.scss */
+/* line 330, ../scss/main.scss */
 .article-description h4 {
   font-family: 'Lora', sans-serif;
 }
-/* line 315, ../scss/main.scss */
+/* line 333, ../scss/main.scss */
 .article-description h6 {
   font-family: 'Lora', sans-serif;
 }
 
-/* line 324, ../scss/main.scss */
+/* line 342, ../scss/main.scss */
 .row .row .articles {
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 329, ../scss/main.scss */
+  /* line 347, ../scss/main.scss */
   .title-bg {
     display: none;
   }
 
-  /* line 332, ../scss/main.scss */
+  /* line 350, ../scss/main.scss */
   .title-circle {
     display: none;
   }
 
-  /* line 336, ../scss/main.scss */
+  /* line 354, ../scss/main.scss */
   .title .title-main h1 {
     font-size: 4em;
   }

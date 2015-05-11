@@ -96,7 +96,10 @@ header {
 		padding: 0px 40px;
 		margin-top: 20px;
 		p {
+			// padding: 15px; 
+			font-size: 0.8em;
 			font-family: 'Lora', serif;
+			text-shadow: 1px 1px rgb(92, 92, 92);
 		}
 	}
 	.title-bg {
@@ -150,13 +153,15 @@ header {
 	background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 0;
   bottom: 0;
   right: 0;
   @include vendorize(transform, translateY(100%));
   @include vendorize(transition, transform 350ms ease-in-out);
-
+	li {
+		font-family: 'Lora', serif;
+	}
   h6 {
   	font-family: 'Lora', serif; 
   }
@@ -211,6 +216,7 @@ header {
  //  margin: auto;
 
   h1 {
+
   	color: white;
   	font-family: 'Montserrat', sans-serif;
   	text-transform: uppercase; 
@@ -218,9 +224,17 @@ header {
 }
 
 .popup {
-	h2 {
+	h1 {
+		margin-bottom: 0; 
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	h2, h4, p {
 		font-family: 'Lora', serif; 
 	}
+
+
 }
 
 #talent-profiles {
@@ -279,19 +293,23 @@ header {
 .article { 
  h4 {
  // color: #659FB7;
- color: white;
- font-style: bold;
+	 color: white;
+	 font-style: italic;
  }
 
 h6{
  font-style: bold;
  // color: #C1D9E3;
- color: white;
+ color: rgb(194, 194, 194);
 }
 
 a {
-	color: #F2EFDF;
-	font-style: italic;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: white;
+
+	// font-style: italic;
 	&:hover {
 		font-style: bold;
   	// color: #566561;
@@ -308,7 +326,7 @@ a {
   padding: 15px;
   text-align: left;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(87, 194, 163, 0.3);
   h4 {
   	font-family: 'Lora', sans-serif; 
   }
