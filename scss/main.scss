@@ -2,8 +2,9 @@
 
 .video {
 	iframe {
+		height: auto;
 		// border: 2px solid white;
-		@include vendorize(box-shadow, 4px 4px #57C2A3);
+		// @include vendorize(box-shadow, 4px 4px #57C2A3);
 	}
 }
 
@@ -17,7 +18,7 @@
 		font-family: Montserrat;
 		font-size: 0.8em;
 		text-transform: uppercase;
-		border-radius: 12px;
+		border-radius: 8px;
 		padding: 6px 10px;
 		// background-color: white;
 		color: white;
