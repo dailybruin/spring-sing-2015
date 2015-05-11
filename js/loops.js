@@ -1,11 +1,12 @@
 var limit=300, // Max number of stars
-body=document.body;
+body=document.body,
+height=$(document).height();
 loop={
  //initilizeing
  start:function(){
   for (var i=0; i <= limit; i++) {
    var star=this.newStar();
-   star.style.top=this.rand()*550+"%";
+   star.style.top=this.rand()*height+'px';
    star.style.left=this.rand()*95+"%";
    body.appendChild(star);
   };
