@@ -1,5 +1,16 @@
 @import "mixins";
 
+.video {
+	iframe {
+		// border: 2px solid white;
+		@include vendorize(box-shadow, 4px 4px #57C2A3);
+	}
+}
+
+#news .articles {
+	margin-bottom: 20px;
+}
+
 #filters {
 	margin: 10px 0px;
 	.btn {
