@@ -1,12 +1,37 @@
 @import "mixins";
 
+.video {
+	iframe {
+		height: auto;
+		// border: 2px solid white;
+		// @include vendorize(box-shadow, 4px 4px #57C2A3);
+	}
+}
+
+#news .articles {
+	margin-bottom: 20px;
+}
+
+.video {
+	img {
+		opacity: 1;
+		@include vendorize(transition, opacity 300ms ease-in-out);
+		&:hover {
+			cursor: pointer;
+			opacity: 0.6;
+		}
+
+	}
+	
+}
+
 #filters {
 	margin: 10px 0px;
 	.btn {
 		font-family: Montserrat;
 		font-size: 0.8em;
 		text-transform: uppercase;
-		border-radius: 12px;
+		border-radius: 8px;
 		padding: 6px 10px;
 		// background-color: white;
 		color: white;
@@ -365,6 +390,10 @@ a {
   h6 {
   	font-family: 'Lora', sans-serif; 
 
+  }
+  @include vendorize(transition, opacity 350ms ease-in-out);
+  &:hover {
+  	opacity: 0.6; 
   }
  }
 

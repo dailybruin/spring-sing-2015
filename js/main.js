@@ -30,7 +30,21 @@
   $(document).on('open.fndtn.reveal', '[data-reveal]', function () {
     var modal = $(this);
     location.replace(mainURL+'#'+modal[0].id);
+
   });
+/*
+ $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+    
+  var h=$('iframe').width()/560*315;
+  $('iframe').css({
+    "height":h
+  })
+  
+  console.log($('iframe').width());
+
+  });*/
+
+
 
   //change url back to mainURL when a modal is closed
   $(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
@@ -38,7 +52,8 @@
     var state = { "canBeAnything": true};
     history.pushState(state, document.title, mainURL);
   });
- })
+
+ });
 //////////////////////////////////////////
 
 var itemHeight = $('.item').width(); 
@@ -50,16 +65,10 @@ $('.item').each(function(){
 
 
 
+
 $(window).ready(function() {
 
-
   $('#wrap').fadeIn(1000); /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
-
-  var h=$('iframe').width()/560*315;
-  $('iframe').css({
-    "height":h
-  })
-
 
 	$('.title-main').css({
     "webkitTransform":"skewY(-6deg)",
@@ -76,8 +85,6 @@ $(window).ready(function() {
     "OTransform":"rotate(8deg)",
     "transform":"rotate(8deg)"
   });
-
-
 
   $('.popup').each(function(i){
     var append = '<a class="close-reveal-modal">x</a>';
@@ -97,10 +104,7 @@ $(window).ready(function() {
     $(this).prepend(append);
 
     // $('.item .item-type')[i].append()
-  })
-
-
-
+  });
 
 
    // $('.title-circle').addClass('animated fadeInDown');
