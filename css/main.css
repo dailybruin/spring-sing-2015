@@ -88,11 +88,12 @@ header {
 }
 /* line 94, ../scss/main.scss */
 .title .title-description {
-  -webkit-transform: skewY(-6deg);
+/*  -webkit-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
   -ms-transform: skewY(-6deg);
   -o-transform: skewY(-6deg);
-  transform: skewY(-6deg);
+  transform: skewY(-6deg);*/
+  position: relative;
   padding: 0px 40px;
   margin-top: 20px;
 }
