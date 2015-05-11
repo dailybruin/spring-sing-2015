@@ -285,6 +285,13 @@ header {
 }
 
 /* line 274, ../scss/main.scss */
+#activity {
+  color: white;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 30px;
+}
+
+/* line 282, ../scss/main.scss */
 #feeds {
   padding-top: 20px;
   -webkit-padding-top: 1;
@@ -297,7 +304,7 @@ header {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
-/* line 287, ../scss/main.scss */
+/* line 295, ../scss/main.scss */
 #instafeed h3 {
   color: white;
   letter-spacing: 2px;
@@ -305,18 +312,18 @@ header {
   padding: 10px;
 }
 
-/* line 296, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 #instafeed img {
   width: 25%;
 }
 
-/* line 300, ../scss/main.scss */
+/* line 308, ../scss/main.scss */
 #feeds {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }
 
-/* line 305, ../scss/main.scss */
+/* line 313, ../scss/main.scss */
 #twitterfeed h3 {
   color: #E2EAAB;
   text-align: center;
@@ -329,30 +336,30 @@ header {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
-/* line 318, ../scss/main.scss */
+/* line 326, ../scss/main.scss */
 .article h4 {
   color: white;
   font-style: italic;
 }
-/* line 324, ../scss/main.scss */
+/* line 332, ../scss/main.scss */
 .article h6 {
   font-style: bold;
   color: #c2c2c2;
 }
-/* line 330, ../scss/main.scss */
+/* line 338, ../scss/main.scss */
 .article a {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 0.8em;
   color: white;
 }
-/* line 337, ../scss/main.scss */
+/* line 345, ../scss/main.scss */
 .article a:hover {
   font-style: bold;
   color: #57C2A3;
 }
 
-/* line 347, ../scss/main.scss */
+/* line 355, ../scss/main.scss */
 .article-description {
   width: 100%;
   padding: 15px;
@@ -360,43 +367,43 @@ header {
   opacity: 1;
   background-color: rgba(87, 194, 163, 0.3);
 }
-/* line 354, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
 .article-description h4 {
   font-family: 'Lora', sans-serif;
 }
-/* line 357, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 .article-description h6 {
   font-family: 'Lora', sans-serif;
 }
 
-/* line 366, ../scss/main.scss */
+/* line 374, ../scss/main.scss */
 .row .row .articles {
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 371, ../scss/main.scss */
+  /* line 379, ../scss/main.scss */
   .title-bg {
     display: none;
   }
 
-  /* line 374, ../scss/main.scss */
+  /* line 382, ../scss/main.scss */
   .title-circle {
     display: none;
   }
 
-  /* line 378, ../scss/main.scss */
+  /* line 386, ../scss/main.scss */
   .title .title-main h1 {
     font-size: 4em;
   }
 }
-/* line 384, ../scss/main.scss */
+/* line 392, ../scss/main.scss */
 iframe {
   width: 100%;
   height: auto;
 }
 
-/* line 389, ../scss/main.scss */
+/* line 397, ../scss/main.scss */
 .modal-image {
   display: inline-block;
   background: #f5f5f5;
@@ -405,19 +412,19 @@ iframe {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-/* line 396, ../scss/main.scss */
+/* line 404, ../scss/main.scss */
 .modal-image img {
   border: 1px solid white;
   margin: 0 auto;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.45);
 }
-/* line 401, ../scss/main.scss */
+/* line 409, ../scss/main.scss */
 .modal-image .modal-caption {
   padding: 9px;
   color: #333;
   box-sizing: border-box;
 }
-/* line 405, ../scss/main.scss */
+/* line 413, ../scss/main.scss */
 .modal-image .modal-caption .caption_content {
   margin: 0;
   font-size: 0.8em;
