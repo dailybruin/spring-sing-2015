@@ -357,4 +357,33 @@ a {
 	}
 }
 
+iframe{
+	width:100%;
+	height:auto;
+}
+
+.modal-image{
+  display: inline-block;
+  background: #f5f5f5;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  	img{
+  		border: 1px solid white;
+  		margin: 0 auto;
+  		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.45);
+  	}
+  	.modal-caption{
+  		padding: 9px;
+  		color: #333;
+  		box-sizing: border-box;
+  		.caption_content{
+  			margin: 0;
+  			font-size: 0.8em;
+ 			padding-top: 0.5em;
+  			float: lefts;
+  		}
+  	}
+}
 

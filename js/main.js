@@ -1,3 +1,28 @@
+//////////deep linking stuff/////////////
+  
+ $(document).ready(function(){
+
+  var mainURL="file:///Users/vivianzhang/Documents/CS/spring-sing-2015/index.html"
+
+  //parse url and open the correct modal
+  var hash=window.location.hash;
+  $(hash).foundation('reveal','open');
+
+  //change url to mainURL#modal when a modal is opened
+  $(document).on('open.fndtn.reveal', '[data-reveal]', function () {
+    var modal = $(this);
+    location.replace(mainURL+'#'+modal[0].id);
+  });
+
+  //change url back to mainURL when a modal is closed
+  $(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
+    var modal = $(this);
+    var state = { "canBeAnything": true};
+    history.pushState(state, document.title, mainURL);
+  });
+ })
+//////////////////////////////////////////
+
 var itemHeight = $('.item').width(); 
 
 
@@ -8,8 +33,14 @@ $('.item').each(function(){
 
 
 
-
 $(window).ready(function() {
+
+  var h=$('iframe').width()/560*315;
+  $('iframe').css({
+    "height":h
+  })
+
+
 	$('#wrap').fadeIn(1000); /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
 	$('.title-main').css({
     "webkitTransform":"skewY(-6deg)",
@@ -26,6 +57,8 @@ $(window).ready(function() {
     "transform":"rotate(8deg)"
   });
 
+
+
   $('.popup').each(function(i){
     var append = '<a class="close-reveal-modal">x</a>';
 
@@ -41,15 +74,19 @@ $(window).ready(function() {
     bg = bg.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '') 
 
 
-
     
 
-    append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
+//    append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
     
     $(this).prepend(append);
 
     // $('.item .item-type')[i].append()
   })
+
+
+
+
+
    // $('.title-circle').addClass('animated fadeInDown');
   // $('.title-circle').css({
   //   "webkitTransform":"rotate(10deg)",
@@ -65,3 +102,5 @@ $(window).ready(function() {
   // $('.title-main').css('transform','skewY(-6deg)');
 
 });
+
+
