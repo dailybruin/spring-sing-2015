@@ -45,14 +45,12 @@ var itemHeight = $('.item').width();
 
 
 $('.item').each(function(){
-
 	$(this).css('height',itemHeight);
 });
 
 
 
 $(window).ready(function() {
-
   var h=$('iframe').width()/560*315;
   $('iframe').css({
     "height":h
@@ -60,6 +58,7 @@ $(window).ready(function() {
 
 
 	$('#wrap').fadeIn(1000); /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
+
 	$('.title-main').css({
     "webkitTransform":"skewY(-6deg)",
     "MozTransform":"skewY(-6deg)",
@@ -67,6 +66,7 @@ $(window).ready(function() {
     "OTransform":"skewY(-6deg)",
     "transform":"skewY(-6deg)"
   });
+
   $('.title-circle').css({
     "webkitTransform":"rotate(8deg)",
     "MozTransform":"rotate(8deg)",
@@ -80,8 +80,10 @@ $(window).ready(function() {
   $('.popup').each(function(i){
     var append = '<a class="close-reveal-modal">x</a>';
 
-    var artist = $($('.item-name')[i]).children('h1')[0].textContent;
-    append += '<h1 style="font-family:\'Lora\', \'sserif\'; text-align: center;">' + artist + '</h1>';  
+    var artist = $($('.item-name')[i]).children('h1')[0];
+    if(artist==undefined) { return false;}
+    var artistName = artist.textContent;
+    append += '<h1 style="font-family:\'Lora\', \'sserif\'; text-align: center;">' + artistName + '</h1>';  
 
     var type = $($('.item-type')[i]).children('h6')[0].textContent;
     
