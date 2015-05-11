@@ -429,5 +429,11 @@ iframe {
   margin: 0;
   font-size: 0.8em;
   padding-top: 0.5em;
-  float: lefts;
+  float: left;
+}
+
+/* line 423, ../scss/main.scss */
+footer p {
+  font-size: 0.8em;
+  float: right;
 }
