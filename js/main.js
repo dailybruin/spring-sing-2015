@@ -91,9 +91,6 @@ $(window).ready(function() {
     bg = $(bg).css("background-image");
     bg = bg.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '') 
 
-
-    
-
 //    append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
     
     $(this).prepend(append);
