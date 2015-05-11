@@ -12,6 +12,19 @@
 	margin-bottom: 20px;
 }
 
+.video {
+	img {
+		opacity: 1;
+		@include vendorize(transition, opacity 300ms ease-in-out);
+		&:hover {
+			cursor: pointer;
+			opacity: 0.6;
+		}
+
+	}
+	
+}
+
 #filters {
 	margin: 10px 0px;
 	.btn {
@@ -283,6 +296,14 @@ header {
 	}
 }
 
+#activity {
+	color: white;
+	font-family: 'Montserrat', serif;
+	margin-bottom: 30px;
+	// text-transform: uppercase;
+}
+
+
 #feeds {
   padding-top: 20px;
     -webkit-padding-top: 1;
@@ -370,6 +391,10 @@ a {
   	font-family: 'Lora', sans-serif; 
 
   }
+  @include vendorize(transition, opacity 350ms ease-in-out);
+  &:hover {
+  	opacity: 0.6; 
+  }
  }
 
 
@@ -418,8 +443,15 @@ iframe{
   			margin: 0;
   			font-size: 0.8em;
  			padding-top: 0.5em;
-  			float: lefts;
+  			float: left;
   		}
   	}
+}
+
+footer{
+	p{
+		font-size: 0.8em;
+		float:right;
+	}
 }
 
