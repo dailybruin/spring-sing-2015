@@ -360,3 +360,37 @@ header {
     font-size: 4em;
   }
 }
+/* line 360, ../scss/main.scss */
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* line 365, ../scss/main.scss */
+.modal-image {
+  display: inline-block;
+  background: #f5f5f5;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+/* line 372, ../scss/main.scss */
+.modal-image img {
+  border: 1px solid white;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.45);
+}
+/* line 377, ../scss/main.scss */
+.modal-image .modal-caption {
+  padding: 9px;
+  color: #333;
+  box-sizing: border-box;
+}
+/* line 381, ../scss/main.scss */
+.modal-image .modal-caption .caption_content {
+  margin: 0;
+  font-size: 0.8em;
+  padding-top: 0.5em;
+  float: lefts;
+}
