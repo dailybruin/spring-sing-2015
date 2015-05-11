@@ -2,7 +2,7 @@
   
  $(document).ready(function(){
 
-  var mainURL="file:///Users/vivianzhang/Documents/CS/spring-sing-2015/index.html"
+  var mainURL="http://daily-bruin.github.io/spring-sing-2015/"
 
   //parse url and open the correct modal
   var hash=window.location.hash;
