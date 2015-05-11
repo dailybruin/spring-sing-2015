@@ -2,7 +2,7 @@
   
  $(document).ready(function(){
 
-  var mainURL="./"
+  var mainURL="./index.html"
 
   //parse url and open the correct modal
   var hash=window.location.hash;
