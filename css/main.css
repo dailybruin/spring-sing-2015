@@ -235,6 +235,7 @@ header {
 
 /* line 228, ../scss/main.scss */
 #talent-profiles h1 {
+  color: white;
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
@@ -254,98 +255,85 @@ header {
 }*/
 /* line 249, ../scss/main.scss */
 #instafeed h3 {
-  color: #C1D9E3;
+  color: #E2EAAB;
   text-align: center;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
 }
 
-/* line 256, ../scss/main.scss */
+/* line 257, ../scss/main.scss */
 #instafeed img {
   width: 25%;
 }
 
-/* line 260, ../scss/main.scss */
+/* line 261, ../scss/main.scss */
 #feeds {
   border-radius: 10px;
-  border: 1px solid #57C2A3;
+  border: 1px solid #E2EAAB;
 }
 
-/* line 265, ../scss/main.scss */
+/* line 266, ../scss/main.scss */
 #twitterfeed h3 {
-  color: #C1D9E3;
+  color: #E2EAAB;
   text-align: center;
   letter-spacing: 2px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-  #news {
-   text-align: center;
-   font-family:'Roboto', serif;
-   display: table;
-   width: 100%;
-   height: auto;
-   letter-spacing: 2px;
- -webkit-background-size: cover;
- -moz-background-size: cover;
-   background-size: cover;
-  -o-background-size: cover;
- }
-
-#feeds {
-  padding-top: 20px;
-    -webkit-padding-top: 1;
-   -moz-padding-top: 1;
-   -ms-opacity: 1;
-   -o-opacity: 1;
-}
-
 /*#instafeed{
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
- .article h4 {
- color: #659FB7;
- font-style: bold;
- }
-
-  .article h6{
-   font-style: bold;
-   color: #C1D9E3;
- }
-
- .article a {
+/* line 279, ../scss/main.scss */
+.article h4 {
+  color: #659FB7;
+  font-style: bold;
+}
+/* line 284, ../scss/main.scss */
+.article h6 {
+  font-style: bold;
+  color: #C1D9E3;
+}
+/* line 289, ../scss/main.scss */
+.article a {
   color: #F2EFDF;
   font-style: italic;
- }
-
- .article a:hover {
+}
+/* line 292, ../scss/main.scss */
+.article a:hover {
   font-style: bold;
   color: #566561;
- }
+}
+
+/* line 301, ../scss/main.scss */
 .article-description {
   width: 100%;
   padding: 15px;
   text-align: left;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -ms-opacity: 1;
-    -o-opacity: 1;
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .article-description @media only screen and (max-width: 40em){
-    padding: none;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* line 312, ../scss/main.scss */
 .row .row .articles {
   margin-bottom: 20px;
 }
 
-.section-header h1 {
-  text-align: left;
-  color: #F2EFDF;
-  text-shadow: 1px 0.5px black;
+@media only screen and (max-width: 479px) {
+  /* line 317, ../scss/main.scss */
+  .title-bg {
+    display: none;
+  }
+
+  /* line 320, ../scss/main.scss */
+  .title-circle {
+    display: none;
+  }
+
+  /* line 324, ../scss/main.scss */
+  .title .title-main h1 {
+    font-size: 4em;
+  }
 }

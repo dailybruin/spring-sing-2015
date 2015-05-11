@@ -251,6 +251,7 @@ header {
   text-align: center;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
 }
  
 #instafeed img{
@@ -269,4 +270,61 @@ header {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+/*#instafeed{
+  border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}*/
+.article { 
+ h4 {
+ color: #659FB7;
+ font-style: bold;
+ }
+
+h6{
+ font-style: bold;
+ color: #C1D9E3;
+}
+
+a {
+	color: #F2EFDF;
+	font-style: italic;
+	&:hover {
+		font-style: bold;
+  	color: #566561;
+
+	}
+}
+}
+
+
+.article-description {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+
+
+
+
+.row .row .articles {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 479px) {
+	.title-bg {
+		display: none;
+	}
+	.title-circle {
+		display: none;
+	}
+	.title .title-main {
+		h1 {
+			font-size: 4em;
+		}
+	}
+}
+
 
