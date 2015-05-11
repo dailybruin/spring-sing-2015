@@ -452,10 +452,12 @@ footer{
 	}
 }
 
-.fb-share-button{
+#share-buttons{
 	float:right;
 	img{
-		width:50%;
+		margin-left:4px;
+		width:55px;
+		height:19px;
 		float:right;
 	}
 }

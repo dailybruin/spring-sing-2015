@@ -97,10 +97,11 @@ $(window).ready(function() {
     var type = $($('.item-type')[i]).children('h6')[0].textContent;
     
     append += '<h6 style="font-family:\'Montserrat\', \'sans-serif\'; text-align: center;">' + type + '</h6>';  
-
+    append+='<div id="share-buttons">'
     append+='<a href = '+'"'+'http://www.facebook.com/sharer.php?u='+document.URL+'"'+'class='+'"'+'fb-share-button'+'"'+'><img src="img/fb-share.png"></a>';
-//    append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
-    
+    append+='<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>';
+    append+='</div>'
+
     $(this).prepend(append);
 
     // $('.item .item-type')[i].append()

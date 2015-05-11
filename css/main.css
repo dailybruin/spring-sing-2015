@@ -410,34 +410,34 @@ header {
   opacity: 0.6;
 }
 
-/* line 403, ../scss/main.scss */
+/* line 400, ../scss/main.scss */
 .row .row .articles {
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 408, ../scss/main.scss */
+  /* line 405, ../scss/main.scss */
   .title-bg {
     display: none;
   }
 
-  /* line 411, ../scss/main.scss */
+  /* line 408, ../scss/main.scss */
   .title-circle {
     display: none;
   }
 
-  /* line 415, ../scss/main.scss */
+  /* line 412, ../scss/main.scss */
   .title .title-main h1 {
     font-size: 4em;
   }
 }
-/* line 421, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 iframe {
   width: 100%;
   height: auto;
 }
 
-/* line 426, ../scss/main.scss */
+/* line 423, ../scss/main.scss */
 .modal-image {
   display: inline-block;
   background: #f5f5f5;
@@ -446,19 +446,19 @@ iframe {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-/* line 433, ../scss/main.scss */
+/* line 430, ../scss/main.scss */
 .modal-image img {
   border: 1px solid white;
   margin: 0 auto;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.45);
 }
-/* line 438, ../scss/main.scss */
+/* line 435, ../scss/main.scss */
 .modal-image .modal-caption {
   padding: 9px;
   color: #333;
   box-sizing: border-box;
 }
-/* line 442, ../scss/main.scss */
+/* line 439, ../scss/main.scss */
 .modal-image .modal-caption .caption_content {
   margin: 0;
   font-size: 0.8em;
@@ -466,18 +466,20 @@ iframe {
   float: left;
 }
 
-/* line 452, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 footer p {
   font-size: 0.8em;
   float: right;
 }
 
-/* line 426, ../scss/main.scss */
-.fb-share-button {
+/* line 455, ../scss/main.scss */
+#share-buttons {
   float: right;
 }
-/* line 428, ../scss/main.scss */
-.fb-share-button img {
-  width: 50%;
+/* line 457, ../scss/main.scss */
+#share-buttons img {
+  margin-left: 4px;
+  width: 55px;
+  height: 19px;
   float: right;
 }
