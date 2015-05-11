@@ -368,9 +368,6 @@ a {
   }
  }
 
-
-
-
 .row .row .articles {
   margin-bottom: 20px;
 }
@@ -426,3 +423,10 @@ footer{
 	}
 }
 
+.fb-share-button{
+	float:right;
+	img{
+		width:50%;
+		float:right;
+	}
+}

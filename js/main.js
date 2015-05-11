@@ -51,13 +51,15 @@ $('.item').each(function(){
 
 
 $(window).ready(function() {
+
+
+  $('#wrap').fadeIn(1000); /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
+
   var h=$('iframe').width()/560*315;
   $('iframe').css({
     "height":h
   })
 
-
-	$('#wrap').fadeIn(1000); /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
 
 	$('.title-main').css({
     "webkitTransform":"skewY(-6deg)",
@@ -89,10 +91,7 @@ $(window).ready(function() {
     
     append += '<h6 style="font-family:\'Montserrat\', \'sans-serif\'; text-align: center;">' + type + '</h6>';  
 
-    var bg = $(".item")[i];
-    bg = $(bg).css("background-image");
-    bg = bg.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '') 
-
+    append+='<a href = '+'"'+'http://www.facebook.com/sharer.php?u='+document.URL+'"'+'class='+'"'+'fb-share-button'+'"'+'><img src="img/fb-share.png"></a>';
 //    append += '<img src="' + bg + '" style="width: 100%; height: auto;"/>';
     
     $(this).prepend(append);
