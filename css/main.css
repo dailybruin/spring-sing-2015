@@ -255,6 +255,12 @@ header {
   margin-bottom: 30px;
 }
 
+#news h1 {
+  color: white;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 30px;
+}
+
 /* line 250, ../scss/main.scss */
 #feeds {
   padding-top: 20px;
