@@ -280,3 +280,61 @@ header {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+  #news {
+   text-align: center;
+   font-family:'Roboto', serif;
+   display: table;
+   width: 100%;
+   height: auto;
+   letter-spacing: 2px;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+   background-size: cover;
+  -o-background-size: cover;
+ }
+
+#feeds {
+  padding-top: 20px;
+    -webkit-padding-top: 1;
+   -moz-padding-top: 1;
+   -ms-opacity: 1;
+   -o-opacity: 1;
+}
+
+/*#instafeed{
+  border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}*/
+ .article h4 {
+ color: #F2EFDF;
+ font-style: bold;
+ }
+
+  .article h6{
+   font-style: bold;
+   color: gray;
+ }
+.article-description {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .article-description @media only screen and (max-width: 40em){
+    padding: none;
+}
+
+.row .row .articles {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  text-align: left;
+}
