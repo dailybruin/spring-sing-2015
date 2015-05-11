@@ -1,4 +1,3 @@
-
 /* line 3, ../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -20,41 +19,117 @@ header {
   color: #fff;
   letter-spacing: 2px;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
-  height: 690px;
+  height: 100%;
 }
 
-/* line 28, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 #wrap {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: black;
-  background: url("http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg");
-  display: none;
+  background: url(../img/header.jpg);
   background-size: cover;
   overflow: hidden;
 }
 
+/* line 45, ../scss/main.scss */
+.title {
+  margin-top: 10%;
+}
 /* line 47, ../scss/main.scss */
+.title .title-main {
+  position: relative;
+  z-index: 10;
+  -webkit-transition: transform 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out;
+  -ms-transition: transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+/* line 53, ../scss/main.scss */
+.title .title-main h1 {
+  text-shadow: 2px 2px #5c5c5c;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 7em;
+  text-align: center;
+  font-family: 'Abril Fatface', serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+/* line 65, ../scss/main.scss */
+.title .title-circle {
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+  background-color: rgba(225, 236, 75, 0.8);
+  position: absolute;
+  top: -40px;
+  right: 15px;
+  line-height: 0.6em;
+  padding-left: 35px;
+  padding-top: 40px;
+  font-weight: bold;
+  padding-left: 8px;
+  -webkit-transition: transform 2s ease-in-out;
+  -moz-transition: transform 2s ease-in-out;
+  -ms-transition: transform 2s ease-in-out;
+  -o-transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+}
+/* line 85, ../scss/main.scss */
+.title .title-circle h4 {
+  font-size: 3em;
+  color: #505161;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 94, ../scss/main.scss */
+.title .title-description {
+  -webkit-transform: skewY(-6deg);
+  -moz-transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  -o-transform: skewY(-6deg);
+  transform: skewY(-6deg);
+  padding: 0px 40px;
+  margin-top: 20px;
+}
+/* line 98, ../scss/main.scss */
+.title .title-description p {
+  font-family: 'Lora', serif;
+}
+/* line 102, ../scss/main.scss */
+.title .title-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: rgba(53, 79, 126, 0.5);
+}
+
+/* line 119, ../scss/main.scss */
 .item {
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 51, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .item h6 {
   margin-top: 0;
 }
 
-/* line 59, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 .item-overlay {
   width: 100%;
   height: 100%;
 }
-/* line 62, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .item-overlay:hover .item-description {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -62,7 +137,7 @@ header {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-/* line 65, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .item-overlay:hover .item-type {
   -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
@@ -70,12 +145,12 @@ header {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-/* line 68, ../scss/main.scss */
+/* line 140, ../scss/main.scss */
 .item-overlay:hover {
   cursor: pointer;
 }
 
-/* line 75, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .item-description {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -96,12 +171,12 @@ header {
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 88, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .item-description h6 {
   font-family: 'Lora', serif;
 }
 
-/* line 94, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 .item-type {
   padding: 5px;
   text-align: center;
@@ -123,7 +198,7 @@ header {
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
-/* line 108, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 .item-type h6 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -136,7 +211,7 @@ header {
   max-width: 62.5rem;
 }
 */
-/* line 123, ../scss/main.scss */
+/* line 195, ../scss/main.scss */
 .item-name {
   position: absolute;
   pointer-events: none;
@@ -146,148 +221,64 @@ header {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 141, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .item-name h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 
-/* line 149, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 .popup h2 {
   font-family: 'Lora', serif;
 }
 
-/* line 156, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 #talent-profiles h1 {
-  /*color: white;*/
   font-family: 'Montserrat', serif;
   margin-bottom: 30px;
 }
 
-/* line 164, ../scss/main.scss */
-.title {
-  margin-top: 10%;
+/* line 236, ../scss/main.scss */
+#feeds {
+  padding-top: 20px;
+  -webkit-padding-top: 1;
+  -moz-padding-top: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
 }
-/* line 166, ../scss/main.scss */
-.title .title-main {
-  -webkit-transition: transform 1s ease-in-out;
-  -moz-transition: transform 1s ease-in-out;
-  -ms-transition: transform 1s ease-in-out;
-  -o-transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-}
-/* line 170, ../scss/main.scss */
-.title .title-main h1 {
-  color: white;
-  font-weight: 400;
-  margin-bottom: 0;
-  font-size: 7em;
+
+/*#instafeed{
+  border-radius: 10px;
+  border: 1px solid #E2EAAB;
+}*/
+/* line 249, ../scss/main.scss */
+#instafeed h3 {
+  color: #C1D9E3;
   text-align: center;
-  font-family: 'Abril Fatface', serif;
-  text-transform: uppercase;
-  line-height: 1.1em;
-}
-/* line 181, ../scss/main.scss */
-.title .title-circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 80px;
-  border: 2px dashed white;
-  position: absolute;
-  top: -40px;
-  right: 15px;
-  font-size: .75em;
-  line-height: 1.15em;
-  padding-top: 40px;
-  font-weight: bold;
-  letter-spacing: 6px;
-  padding-left: 8px;
-  -webkit-transition: transform 2s ease-in-out;
-  -moz-transition: transform 2s ease-in-out;
-  -ms-transition: transform 2s ease-in-out;
-  -o-transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-}
-/* line 198, ../scss/main.scss */
-.title .title-circle h4 {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-/* line 205, ../scss/main.scss */
-.title .title-description {
-  padding: 20px;
-  margin-top: 20px;
-}
-/* line 208, ../scss/main.scss */
-.title .title-description p {
-  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* color palette from: https://color.adobe.com/Dreams-Forever-color-theme-2208291/ */
+/* line 256, ../scss/main.scss */
+#instafeed img {
+  width: 25%;
+}
 
-/* == General ==*/
-.section-header h1 {
-   color: #866FB8;
-   text-align: left;
-   font-family: 'Montserrat', serif;
-   margin-bottom: 30px;
-   letter-spacing: 3px;
- }
+/* line 260, ../scss/main.scss */
+#feeds {
+  border-radius: 10px;
+  border: 1px solid #57C2A3;
+}
 
-/* == News Section ==*/
-.article {
+/* line 265, ../scss/main.scss */
+#twitterfeed h3 {
+  color: #C1D9E3;
   text-align: center;
+  letter-spacing: 2px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
-.article h6{
-  @include vendorize(opacity, 1);
-  height: 100%;
-  width: 100%;
-  margin: 5px;
-  padding: 5px;
-  color: #84A891;
-}
-.article a {
-  color: #F2EFDF;
-  font-style: italic;
-}
-
-.article a:hover {
-  font-style: bold;
-  color: gray;
-}
- .article h4 {
-  color: #F2EFDF;
-  font-style: bold;
- }
-
- .article img {
-    width: 100%;
-   vertical-align: center;
- }
-
- /* line 62, ../scss/main.scss */
- .article-description {
-   width: 100%;
-   padding: 15px;
-   text-align: left;
-   -webkit-opacity: 1;
-   -moz-opacity: 1;
-   -ms-opacity: 1;
-   -o-opacity: 1;
-   opacity: 1;
-   background-color: rgba(0, 0, 0, 0.4);
-   -webkit-transition: opacity 600ms ease-in-out;
-}
-.article-description @media only screen and (max-width: 40em){
-  padding: none;
-}
-
-.row .row .articles {
-  margin-bottom: 20px;
-}
-
 
   #news {
    text-align: center;
@@ -314,27 +305,47 @@ header {
   border-radius: 10px;
   border: 1px solid #E2EAAB;
 }*/
+ .article h4 {
+ color: #659FB7;
+ font-style: bold;
+ }
 
-#instafeed h3{
-  color:#E2EAAB;
-  text-align: center;
-  letter-spacing: 2px;
-  background-color: rgba(0, 0, 0, 0.4);
+  .article h6{
+   font-style: bold;
+   color: #C1D9E3;
+ }
+
+ .article a {
+  color: #F2EFDF;
+  font-style: italic;
+ }
+
+ .article a:hover {
+  font-style: bold;
+  color: #566561;
+ }
+.article-description {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .article-description @media only screen and (max-width: 40em){
+    padding: none;
 }
 
-#instafeed img{
-  width: 25%;
+.row .row .articles {
+  margin-bottom: 20px;
 }
 
-#feeds {
-   border-radius: 10px;
-  border: 1px solid #E2EAAB;
-}
-
-#twitterfeed h3{
-  color:#E2EAAB;
-  text-align: center;
-  letter-spacing: 2px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
+.section-header h1 {
+  text-align: left;
+  color: #F2EFDF;
+  text-shadow: 1px 0.5px black;
 }
