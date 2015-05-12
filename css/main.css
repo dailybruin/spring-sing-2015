@@ -503,3 +503,8 @@ footer p {
   height: 19px;
   float: right;
 }
+
+/* line 493, ../scss/main.scss */
+.columns + .columns:last-child {
+  float: left;
+}

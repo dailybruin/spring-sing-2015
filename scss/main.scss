@@ -489,3 +489,9 @@ footer{
 		float:right;
 	}
 }
+
+.columns+.columns:last-child
+{
+	
+	float:left;
+}
