@@ -141,6 +141,7 @@ header {
 		}
 	}
 	.title-description {
+		@include vendorize(transform, skewY(-0deg));
 		padding: 0px 40px;
 		margin-top: 20px;
 		p {
@@ -460,3 +461,4 @@ footer{
 		float:right;
 	}
 }
+
