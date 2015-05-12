@@ -12,37 +12,39 @@
 	margin-bottom: 20px;
 }
 
+.video-overlay {
+	background-position: center;
+	text-align: center;
+	width: auto; 
+	height: 200px; 
+
+	i {
+		position: absolute;              
+   	top: 50%;                        
+   	@include vendorize(transform, translate(0, -50%));
+
+	}
+	@include vendorize(transition, opacity 350ms ease-in-out);
+	&:hover {
+		opacity: 0.4;
+		cursor: pointer;
+	}
+}
+
 .video {
-	img {
-		opacity: 1;
-		width: 100%;
-		height: auto;
-		@include vendorize(transition, opacity 300ms ease-in-out);
-		// &:hover {
-		// 	cursor: pointer;
-		// 	opacity: 0.6;
-		// }
-
-	}
-
-	.video-overlay {
-		position: absolute;
-		// background-color: black;
-		opacity: 0.6;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0; 
-		margin: auto;	
-		text-align: center;
-
-		i {
-			position: relative;
-			top: 50%;
-			@include vendorize(transform, translateY(-50%));
-		}
-	}
+	position: relative;
 	
+}
+
+@media only screen and (max-width:40em){
+  .flex-video {
+    margin-top: 50%;
+    -webkit-margin-top: 50%;
+    -moz-margin-top: 50%;
+    -ms-margin-top: 50%;
+    -o-margin-top: 50%;
+
+  }
 }
 
 #filters {
