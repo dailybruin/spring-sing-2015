@@ -67,8 +67,7 @@ $('.item').each(function(){
 
 
 $(window).ready(function() {
-
-  $('#wrap').fadeIn(1000); /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
+/*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
 
 	$('.title-main').css({
     "webkitTransform":"skewY(-6deg)",
