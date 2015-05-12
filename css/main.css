@@ -401,9 +401,7 @@ header {
   font-family: 'Lora', sans-serif;
 }
 /* line 394, ../scss/main.scss */
-.article-description:hover {
-  opacity: 0.6;
-}
+
 
 /* line 399, ../scss/main.scss */
 .row .row .articles {
