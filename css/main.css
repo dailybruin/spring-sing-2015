@@ -23,6 +23,17 @@
   opacity: 0.6;
 }
 
+@media only screen and (max-width:40em){
+  .flex-video {
+    margin-top: 50%;
+    -webkit-margin-top: 50%;
+    -moz-margin-top: 50%;
+    -ms-margin-top: 50%;
+    -o-margin-top: 50%;
+
+  }
+}
+
 /* line 28, ../scss/main.scss */
 #filters {
   margin: 10px 0px;
