@@ -1,3 +1,26 @@
+
+#filters button.all.btn.active, #filters button.solos.btn:hover {
+  background-color: rgba(49, 119, 96, 0.62);
+}
+.solos .item-name, #filters button.solos.btn.active, #filters button.solos.btn:hover {
+  background-color: rgba(69, 139, 116, 0.62);
+}
+
+.duets .item-name, #filters button.duets.btn.active, #filters button.duets.btn:hover  {
+  background-color: rgba(102, 205, 170, 0.62);
+}
+
+.bands .item-name, #filters button.bands.btn.active, #filters button.bands.btn:hover{
+  background-color: rgba(118, 230, 198 0.62);
+}
+
+.acapella .item-name, #filters button.acapella.btn.active, #filters button.acapella.btn:hover {
+  background-color: rgba(127, 255, 212, 0.62);
+}
+
+.production .item-name, #filters button.production.btn.active, #filters button.production.btn:hover  {
+  background-color: rgba(165, 255, 229, 0.62);
+}
 /* line 4, ../scss/main.scss */
 .video iframe {
   height: auto;
