@@ -411,49 +411,53 @@ header {
 
 /* line 404, ../scss/main.scss */
 .article-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   padding: 15px;
   text-align: left;
   opacity: 1;
   background-color: rgba(87, 194, 163, 0.3);
 }
-/* line 411, ../scss/main.scss */
+/* line 415, ../scss/main.scss */
 .article-description h4 {
   font-family: 'Lora', sans-serif;
 }
-/* line 414, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 .article-description h6 {
   font-family: 'Lora', sans-serif;
 }
 
-/* line 424, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 .row .row .articles {
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 429, ../scss/main.scss */
+  /* line 433, ../scss/main.scss */
   .title-bg {
     display: none;
   }
 
-  /* line 432, ../scss/main.scss */
+  /* line 436, ../scss/main.scss */
   .title-circle {
     display: none;
   }
 
-  /* line 436, ../scss/main.scss */
+  /* line 440, ../scss/main.scss */
   .title .title-main h1 {
     font-size: 4em;
   }
 }
-/* line 442, ../scss/main.scss */
+/* line 446, ../scss/main.scss */
 iframe {
   width: 100%;
   height: auto;
 }
 
-/* line 447, ../scss/main.scss */
+/* line 451, ../scss/main.scss */
 .modal-image {
   display: inline-block;
   background: #f5f5f5;
@@ -462,19 +466,19 @@ iframe {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-/* line 454, ../scss/main.scss */
+/* line 458, ../scss/main.scss */
 .modal-image img {
   border: 1px solid white;
   margin: 0 auto;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.45);
 }
-/* line 459, ../scss/main.scss */
+/* line 463, ../scss/main.scss */
 .modal-image .modal-caption {
   padding: 9px;
   color: #333;
   box-sizing: border-box;
 }
-/* line 463, ../scss/main.scss */
+/* line 467, ../scss/main.scss */
 .modal-image .modal-caption .caption_content {
   margin: 0;
   font-size: 0.8em;
@@ -482,17 +486,17 @@ iframe {
   float: left;
 }
 
-/* line 473, ../scss/main.scss */
+/* line 477, ../scss/main.scss */
 footer p {
   font-size: 0.8em;
   float: right;
 }
 
-/* line 479, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 #share-buttons {
   float: right;
 }
-/* line 481, ../scss/main.scss */
+/* line 485, ../scss/main.scss */
 #share-buttons img {
   margin-left: 4px;
   width: 55px;
