@@ -391,10 +391,7 @@ a {
   	font-family: 'Lora', sans-serif; 
 
   }
-  @include vendorize(transition, opacity 350ms ease-in-out);
-  &:hover {
-  	opacity: 0.6; 
-  }
+  
  }
 
 .row .row .articles {
