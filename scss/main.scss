@@ -15,12 +15,32 @@
 .video {
 	img {
 		opacity: 1;
+		width: 100%;
+		height: auto;
 		@include vendorize(transition, opacity 300ms ease-in-out);
-		&:hover {
-			cursor: pointer;
-			opacity: 0.6;
-		}
+		// &:hover {
+		// 	cursor: pointer;
+		// 	opacity: 0.6;
+		// }
 
+	}
+
+	.video-overlay {
+		position: absolute;
+		// background-color: black;
+		opacity: 0.6;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0; 
+		margin: auto;	
+		text-align: center;
+
+		i {
+			position: relative;
+			top: 50%;
+			@include vendorize(transform, translateY(-50%));
+		}
 	}
 	
 }
@@ -75,6 +95,7 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
+
 
   // background: url('http://dailybruin.com/images/galleries/spring-sing-2013/springsing1-nb.jpg');
   background: url(../img/header.jpg);
@@ -144,6 +165,8 @@ header {
 		padding: 0px 40px;
 		margin-top: 20px;
 		p {
+			position: relative;
+			z-index: 2;
 			// padding: 15px; 
 			font-size: 0.8em;
 			font-family: 'Lora', serif;
@@ -347,32 +370,32 @@ header {
   border: 1px solid #E2EAAB;
 }*/
 .article { 
- h4 {
- // color: #659FB7;
-	 color: white;
-	 font-style: italic;
- }
-
-h6{
- font-style: bold;
- // color: #C1D9E3;
- color: rgb(194, 194, 194);
-}
-
-a {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-size: 0.8em;
-	color: white;
-
-	// font-style: italic;
-	&:hover {
-		font-style: bold;
-  	// color: #566561;
-  	color: #57C2A3;
-
+	h4 {
+	 // color: #659FB7;
+		color: white;
+		font-style: italic;
 	}
-}
+
+	h6{
+	 font-style: bold;
+	 // color: #C1D9E3;
+	 color: rgb(194, 194, 194);
+	}
+
+	a {
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: white;
+
+		// font-style: italic;
+		&:hover {
+			font-style: bold;
+	  	// color: #566561;
+	  	color: #57C2A3;
+
+		}
+	}
 }
 
 
@@ -390,10 +413,10 @@ a {
   	font-family: 'Lora', sans-serif; 
 
   }
-  @include vendorize(transition, opacity 350ms ease-in-out);
-  &:hover {
-  	opacity: 0.6; 
-  }
+  // @include vendorize(transition, opacity 350ms ease-in-out);
+  // &:hover {
+  // 	opacity: 0.6; 
+  // }
  }
 
 .row .row .articles {
