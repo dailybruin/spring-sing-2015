@@ -4,6 +4,23 @@
   
  $(document).ready(function(){
 
+  $('.title-main').css({
+    "webkitTransform":"skewY(-6deg)",
+    "MozTransform":"skewY(-6deg)",
+    "msTransform":"skewY(-6deg)",
+    "OTransform":"skewY(-6deg)",
+    "transform":"skewY(-6deg)"
+  });
+
+  $('.title-circle').css({
+    "webkitTransform":"rotate(8deg)",
+    "MozTransform":"rotate(8deg)",
+    "msTransform":"rotate(8deg)",
+    "OTransform":"rotate(8deg)",
+    "transform":"rotate(8deg)"
+  });
+
+
   var $thumbs = $(".item");
   var $btns = $(".btn").on("click", function() {
     
@@ -69,22 +86,7 @@ $('.item').each(function(){
 $(window).ready(function() {
 /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
 
-	$('.title-main').css({
-    "webkitTransform":"skewY(-6deg)",
-    "MozTransform":"skewY(-6deg)",
-    "msTransform":"skewY(-6deg)",
-    "OTransform":"skewY(-6deg)",
-    "transform":"skewY(-6deg)"
-  });
-
-  $('.title-circle').css({
-    "webkitTransform":"rotate(8deg)",
-    "MozTransform":"rotate(8deg)",
-    "msTransform":"rotate(8deg)",
-    "OTransform":"rotate(8deg)",
-    "transform":"rotate(8deg)"
-  });
-
+	
   $('.popup').each(function(i){
     var append = '<a class="close-reveal-modal">x</a>';
 
