@@ -439,6 +439,9 @@ header {
   margin-bottom: 20px;
 }
 
+.row .row .video {
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 479px) {
   /* line 434, ../scss/main.scss */
   .title-bg {
