@@ -1,5 +1,9 @@
 @import "mixins";
 
+.s-header .s-title {
+	padding: 0px 20px;
+}
+
 .video {
 	iframe {
 		height: auto;
