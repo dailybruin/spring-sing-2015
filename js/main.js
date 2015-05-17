@@ -127,7 +127,7 @@ $(window).ready(function() {
 });
 
 setTimeout(function(){ 
-  $('.s-header .s-title .s-story').css('padding', '0px 20px');  
+  $('.s-header .s-title .s-story').css('padding', '20px');  
   $('.storify iframe').css({
     'max-width' : '100%', 
     'width' : '100%'
