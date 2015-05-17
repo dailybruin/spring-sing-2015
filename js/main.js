@@ -84,6 +84,8 @@ $('.item').each(function(){
 
 
 $(window).ready(function() {
+
+  $('.storify iframe').css({ 'max-width': '100%', 'width:': '100%'});
 /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
 
 	
