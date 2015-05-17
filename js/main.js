@@ -85,7 +85,6 @@ $('.item').each(function(){
 
 $(window).ready(function() {
 
-  $('.storify iframe').css({ 'max-width': '100%', 'width:': '100%'});
 /*fadeIn rate in milliseconds. A higher number = slower fadeIn*/
 
 	
@@ -126,5 +125,14 @@ $(window).ready(function() {
   // $('.title-main').css('transform','skewY(-6deg)');
 
 });
+
+setTimeout(function(){ 
+  $('.s-header .s-title .s-story').css('padding', '0px 20px');  
+  $('.storify iframe').css({
+    'max-width' : '100%', 
+    'width' : '100%'
+  });
+
+}, 5000); 
 
 
