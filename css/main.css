@@ -82,6 +82,11 @@
   color: white;
 }
 
+#filters .btn .results-btn:hover {
+  background-color: rgba(232, 167, 12, 0.62);
+  color: white;
+}
+
 /* line 75, ../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -228,6 +233,16 @@ header {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
+
+.item-overlay:hover .item-award {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+
 /* line 218, ../scss/main.scss */
 .item-overlay:hover {
   cursor: pointer;
@@ -253,6 +268,23 @@ header {
   -ms-transition: transform 350ms ease-in-out;
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
+}
+
+.winner {
+  top: 60%;
+}
+.tall-winner {
+  top: 55%;
+}
+.short-winner {
+  top: 70%;
+}
+.item-winner {
+  color: rgb(232, 167, 12);
+  float: right;
+}
+.award {
+  color: rgb(171, 123, 9);
 }
 /* line 237, ../scss/main.scss */
 .item-description li {
@@ -285,6 +317,8 @@ header {
   -o-transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
 }
+
+
 /* line 260, ../scss/main.scss */
 .item-type h6 {
   font-family: 'Montserrat', sans-serif;
@@ -314,6 +348,8 @@ header {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+
+
 
 /* line 302, ../scss/main.scss */
 .popup h1 {

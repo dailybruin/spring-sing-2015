@@ -242,6 +242,22 @@ header {
   }
 
 }
+.winner {
+  top: 60%;
+}
+.tall-winner {
+  top: 55%;
+}
+.short-winner {
+  top: 70%;
+}
+.item-winner {
+  color: rgb(232, 167, 12);
+  float: right;
+}
+.award {
+  color: rgb(171, 123, 9);
+}
 
 .item-type {
 	padding: 5px;
