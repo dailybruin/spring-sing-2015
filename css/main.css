@@ -273,8 +273,12 @@ header {
 .winner {
   top: 60%;
 }
+
+.double-award {
+  font-size: .90em;
+}
 .tall-winner {
-  top: 55%;
+  top: 50%;
 }
 .short-winner {
   top: 70%;
