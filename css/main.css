@@ -286,6 +286,14 @@ header {
 .award {
   color: rgb(171, 123, 9);
 }
+.modal-award {
+  float: left;
+  font-style: italic;
+}
+
+.modal-award {
+  text-align: center;
+}
 /* line 237, ../scss/main.scss */
 .item-description li {
   font-family: 'Lora', serif;
