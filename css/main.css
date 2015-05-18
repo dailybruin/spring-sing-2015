@@ -288,7 +288,8 @@ header {
   float: right;
 }
 .award {
-  color: rgb(171, 123, 9);
+  color: #CC920B;
+  font-style: bold;
 }
 .modal-award {
   float: left;
